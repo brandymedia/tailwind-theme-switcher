@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.is-active {
+    border: 2px solid rgb(107, 114, 128)!important;
+}
