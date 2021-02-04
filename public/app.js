@@ -7,7 +7,11 @@ themeSwitcher.addEventListener('click', (e) => {
 
 window.addEventListener('load', () => {
     getTheme();
-})
+});
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    getTheme();
+});
 
 function setActive(selectedButton) {
     const themeSwitcherButtons = document.querySelectorAll('.theme-switcher-button');
